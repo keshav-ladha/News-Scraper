@@ -11,7 +11,7 @@ def speak(str):
 if __name__ == '__main__':
     import requests
     import json
-    url = ('http://newsapi.org/v2/top-headlines?country=in&apiKey=<get your api key at newsapi.org>')
+    url = ('http://newsapi.org/v2/top-headlines?country=<COUNTRY-CODE>&apiKey=<API KEY YOU GET AT NEWSAPI.ORG>')   #Add YOUR COUNTRY CODE AND THE API KEY YOU GET AT NEWSAPI.ORG
     n = int(input("No . of news Headlines"))   #Input number of news you want to listen
     response = requests.get(url)
     text = response.text
